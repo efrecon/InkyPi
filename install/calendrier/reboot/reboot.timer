@@ -1,0 +1,9 @@
+[Unit]
+Description=Timer to trigger a daily 4:00 AM host reboot
+
+[Timer]
+OnCalendar=*-*-* 04:00:00
+Persistent=true
+
+[Install]
+WantedBy=timers.target

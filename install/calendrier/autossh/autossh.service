@@ -1,0 +1,20 @@
+[Unit]
+Description=SSH connection
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+User=emmanuel
+Type=simple
+#WorkingDirectory=~
+ExecStart=autossh -M 0 -N -o "ServerAliveInterval 60" -o "ServerAliveCountMax 3" -R 10000:localhost:22 -p 2210 root@home.freconia.se
+Restart=on-failure
+RestartSec=60
+KillSignal=SIGINT
+StandardOutput=journal
+StandardError=journal
+CPUQuota=40%
+MemoryMax=200M
+
+[Install]
+WantedBy=multi-user.target

@@ -1,0 +1,6 @@
+[Unit]
+Description=Daily host reboot
+
+[Service]
+Type=oneshot
+ExecStart=/sbin/reboot

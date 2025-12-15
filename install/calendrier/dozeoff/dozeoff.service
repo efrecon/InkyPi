@@ -1,0 +1,6 @@
+[Unit]
+Description=Put the FBI service to sleep
+
+[Service]
+Type=oneshot
+ExecStart=/usr/bin/systemctl stop fbi.service

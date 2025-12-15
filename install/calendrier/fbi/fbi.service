@@ -1,0 +1,21 @@
+[Unit]
+Description=FrameBuffer Images
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+User=root
+Type=simple
+#WorkingDirectory=~
+Environment="FBI_INKYDIR=/home/emmanuel/InkyPi"
+ExecStart=/usr/local/bin/fbi.sh
+Restart=on-failure
+RestartSec=60
+KillSignal=SIGINT
+StandardOutput=journal
+StandardError=journal
+CPUQuota=40%
+MemoryMax=200M
+
+[Install]
+# Nothing here, controlled by timers.
