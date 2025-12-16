@@ -18,4 +18,4 @@ CPUQuota=40%
 MemoryMax=200M
 
 [Install]
-# Nothing here, controlled by timers.
+WantedBy=multi-user.target
