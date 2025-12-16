@@ -11,6 +11,9 @@ if set -o | grep -q 'pipefail'; then set -o pipefail; fi
 # Name of the service to start
 : "${WAKEUP_SERVICE:=fbi}"
 
+# Root of the backlight settings
+: "${WAKEUP_BACKLIGHT:=/sys/class/backlight/intel_backlight}"
+
 # Verbosity level
 : "${WAKEUP_VERBOSE:=1}"
 
@@ -41,3 +44,10 @@ else
   warn "No service specified to start"
 fi
 
+if [ -d "$WAKEUP_BACKLIGHT" ]; then
+  max=$(cat "$WAKEUP_BACKLIGHT/max_brightness")
+  info "Setting backlight brightness to %d in %s" "$max" "$WAKEUP_BACKLIGHT"
+  echo "$max" > "$WAKEUP_BACKLIGHT/brightness" || error "Failed to set backlight brightness to %d in %s" "$max" "$WAKEUP_BACKLIGHT"
+else
+  warn "Backlight directory %s does not exist" "$WAKEUP_BACKLIGHT"
+fi

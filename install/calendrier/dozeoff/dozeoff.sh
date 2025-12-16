@@ -11,12 +11,8 @@ if set -o | grep -q 'pipefail'; then set -o pipefail; fi
 # Name of the service to stop
 : "${DOZEOFF_SERVICE:=fbi}"
 
-# TTY where to force the blanking
-_tty=$(tty || true)
-if [ "$_tty" = "not a tty" ] || [ -z "$_tty" ]; then
-  _tty="/dev/tty1"
-fi
-: "${DOZEOFF_TTY:="$_tty"}"
+# Root of the backlight settings
+: "${DOZEOFF_BACKLIGHT:=/sys/class/backlight/intel_backlight}"
 
 # Verbosity level
 : "${DOZEOFF_VERBOSE:=1}"
@@ -46,5 +42,9 @@ else
   warn "No service specified to stop"
 fi
 
-setterm --term linux --blank force < "$DOZEOFF_TTY" || error "Failed to force blanking on %s" "$DOZEOFF_TTY"
-
+if [ -d "$DOZEOFF_BACKLIGHT" ]; then
+  info "Setting backlight brightness to 0 in %s" "$DOZEOFF_BACKLIGHT"
+  echo 0 > "$DOZEOFF_BACKLIGHT/brightness" || error "Failed to set backlight brightness to 0 in %s" "$DOZEOFF_BACKLIGHT"
+else
+  warn "Backlight directory %s does not exist" "$DOZEOFF_BACKLIGHT"
+fi
