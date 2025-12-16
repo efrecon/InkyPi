@@ -3,4 +3,5 @@ Description=Wake Up the FBI service
 
 [Service]
 Type=oneshot
-ExecStart=/usr/bin/systemctl start fbi.service
+ExecStart=/usr/local/bin/wakeup.sh
+

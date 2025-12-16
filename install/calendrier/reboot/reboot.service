@@ -3,4 +3,5 @@ Description=Daily host reboot
 
 [Service]
 Type=oneshot
-ExecStart=/sbin/reboot
+ExecStart=/usr/local/bin/reboot.sh
+

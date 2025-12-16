@@ -1,8 +1,10 @@
 [Unit]
-Description=Put the fbi service to sleep in the evenings
+Description=Put the fbi service to sleep in the evenings and after reboots
 
 [Timer]
 OnCalendar=*-*-* 21:00:00
+OnCalendar=*-*-* 04:02:00
+OnCalendar=*-*-* 04:04:00
 Persistent=true
 
 [Install]
