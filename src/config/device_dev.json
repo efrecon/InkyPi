@@ -24,7 +24,7 @@
                             "selectedFrame": "None",
                             "topMargin": "",
                             "bottomMargin": "",
-                            "leftMargin": "",
+                            "leftMargin": "20",
                             "rightMargin": "",
                             "backgroundOption": "color",
                             "backgroundColor": "#ffffff",
@@ -33,7 +33,7 @@
                         "refresh": {
                             "interval": 3600
                         },
-                        "latest_refresh_time": "2025-12-16T23:01:20.648354+01:00"
+                        "latest_refresh_time": "2025-12-17T18:56:41.787835+01:00"
                     },
                     {
                         "plugin_id": "today",
@@ -52,7 +52,7 @@
                             "selectedFrame": "None",
                             "topMargin": "",
                             "bottomMargin": "",
-                            "leftMargin": "",
+                            "leftMargin": "20",
                             "rightMargin": "",
                             "backgroundOption": "color",
                             "backgroundColor": "#ffffff",
@@ -61,7 +61,7 @@
                         "refresh": {
                             "interval": 3600
                         },
-                        "latest_refresh_time": "2025-12-16T20:45:06.418282+01:00"
+                        "latest_refresh_time": "2025-12-17T18:20:11.984233+01:00"
                     },
                     {
                         "plugin_id": "rss",
@@ -74,7 +74,7 @@
                             "selectedFrame": "None",
                             "topMargin": "",
                             "bottomMargin": "",
-                            "leftMargin": "",
+                            "leftMargin": "20",
                             "rightMargin": "",
                             "backgroundOption": "color",
                             "backgroundColor": "#ffffff",
@@ -83,7 +83,7 @@
                         "refresh": {
                             "interval": 3600
                         },
-                        "latest_refresh_time": "2025-12-16T22:48:27.022814+01:00"
+                        "latest_refresh_time": "2025-12-17T23:16:47.789787+01:00"
                     },
                     {
                         "plugin_id": "today",
@@ -100,7 +100,7 @@
                             "selectedFrame": "None",
                             "topMargin": "",
                             "bottomMargin": "",
-                            "leftMargin": "",
+                            "leftMargin": "20",
                             "rightMargin": "",
                             "backgroundOption": "color",
                             "backgroundColor": "#ffffff",
@@ -109,7 +109,7 @@
                         "refresh": {
                             "interval": 3600
                         },
-                        "latest_refresh_time": "2025-12-16T20:47:27.698320+01:00"
+                        "latest_refresh_time": "2025-12-17T18:30:57.105978+01:00"
                     },
                     {
                         "plugin_id": "rss",
@@ -122,7 +122,7 @@
                             "selectedFrame": "None",
                             "topMargin": "",
                             "bottomMargin": "",
-                            "leftMargin": "",
+                            "leftMargin": "20",
                             "rightMargin": "",
                             "backgroundOption": "color",
                             "backgroundColor": "#ffffff",
@@ -131,7 +131,7 @@
                         "refresh": {
                             "interval": 3600
                         },
-                        "latest_refresh_time": "2025-12-16T22:50:58.597637+01:00"
+                        "latest_refresh_time": "2025-12-17T18:36:17.197431+01:00"
                     },
                     {
                         "plugin_id": "today",
@@ -148,7 +148,7 @@
                             "selectedFrame": "None",
                             "topMargin": "",
                             "bottomMargin": "",
-                            "leftMargin": "",
+                            "leftMargin": "20",
                             "rightMargin": "",
                             "backgroundOption": "color",
                             "backgroundColor": "#ffffff",
@@ -157,7 +157,7 @@
                         "refresh": {
                             "interval": 3600
                         },
-                        "latest_refresh_time": "2025-12-16T20:49:46.728677+01:00"
+                        "latest_refresh_time": "2025-12-17T17:59:28.205485+01:00"
                     },
                     {
                         "plugin_id": "weather",
@@ -175,7 +175,7 @@
                             "selectedFrame": "None",
                             "topMargin": "",
                             "bottomMargin": "",
-                            "leftMargin": "",
+                            "leftMargin": "20",
                             "rightMargin": "",
                             "backgroundOption": "color",
                             "backgroundColor": "#ffffff",
@@ -184,7 +184,7 @@
                         "refresh": {
                             "interval": 10800
                         },
-                        "latest_refresh_time": "2025-12-16T22:56:16.348279+01:00"
+                        "latest_refresh_time": "2025-12-17T16:41:36.694078+01:00"
                     },
                     {
                         "plugin_id": "rss",
@@ -197,7 +197,7 @@
                             "selectedFrame": "None",
                             "topMargin": "",
                             "bottomMargin": "",
-                            "leftMargin": "",
+                            "leftMargin": "20",
                             "rightMargin": "",
                             "backgroundOption": "color",
                             "backgroundColor": "#ffffff",
@@ -206,27 +206,27 @@
                         "refresh": {
                             "interval": 3600
                         },
-                        "latest_refresh_time": "2025-12-16T22:46:10.106423+01:00"
+                        "latest_refresh_time": "2025-12-17T18:09:48.877262+01:00"
                     }
                 ],
-                "current_plugin_index": 2
+                "current_plugin_index": 0
             }
         ],
-        "active_playlist": null
+        "active_playlist": "Default"
     },
     "refresh_info": {
-        "refresh_time": "2025-12-16T23:01:20.648354+01:00",
-        "image_hash": "a26b3befc3666544c5b8beee1e8d19a9c10688e7973aafc51395e968a967da8d",
+        "refresh_time": "2025-12-17T23:16:47.789787+01:00",
+        "image_hash": "ffd067fdc9f358b227577e57f78f2b7ea58f964df82287f474f42f2b7d160601",
         "refresh_type": "Playlist",
         "plugin_id": "rss",
         "playlist": "Default",
-        "plugin_instance": "Le Monde"
+        "plugin_instance": "CourrierInternationalSuede"
     },
     "inverted_image": null,
     "log_system_stats": null,
     "timezone": "Europe/Paris",
     "time_format": "24h",
-    "plugin_cycle_interval_seconds": 900,
+    "plugin_cycle_interval_seconds": 300,
     "image_settings": {
         "saturation": 1.0,
         "brightness": 1.0,
