@@ -226,7 +226,7 @@
     "log_system_stats": null,
     "timezone": "Europe/Paris",
     "time_format": "24h",
-    "plugin_cycle_interval_seconds": 300,
+    "plugin_cycle_interval_seconds": 900,
     "image_settings": {
         "saturation": 1.0,
         "brightness": 1.0,
