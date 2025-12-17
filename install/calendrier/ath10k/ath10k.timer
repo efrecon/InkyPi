@@ -1,0 +1,10 @@
+[Unit]
+Description=Fix wifi module parameters on reboot
+
+[Timer]
+# Run 2 minute after boot
+OnBootSec=2min
+AccuracySec=1s
+
+[Install]
+WantedBy=timers.target

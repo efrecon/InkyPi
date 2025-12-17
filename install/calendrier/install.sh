@@ -62,9 +62,12 @@ install_unit() {
   systemctl start ${1}.${_type}
 }
 
-install_unit inkypi
-install_unit fbi
-install_unit reboot
-install_unit wakeup
-install_unit dozeoff
-install_unit autossh
+if [ "$#" = 0 ]; then
+  find "${INKYPI_INSTDIR}" -maxdepth 1 -mindepth 1 -type d -exec basename \{\} \; | while read -r unit; do
+    install_unit "$unit"
+  done
+else
+  for unit in "$@"; do
+    install_unit "$unit"
+  done
+fi

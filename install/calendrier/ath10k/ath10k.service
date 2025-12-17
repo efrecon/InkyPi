@@ -1,0 +1,7 @@
+[Unit]
+Description=Set wifi module parameters
+
+[Service]
+Type=oneshot
+ExecStart=/usr/local/bin/ath10k.sh
+

@@ -1,0 +1,12 @@
+[Unit]
+Description=Test connectivity every 5 minutes
+
+[Timer]
+# Run 5 minute after boot
+OnBootSec=5min
+# Run everty 5 minutes
+OnUnitActiveSec=5min
+AccuracySec=1s
+
+[Install]
+WantedBy=timers.target

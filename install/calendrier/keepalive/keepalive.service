@@ -1,0 +1,7 @@
+[Unit]
+Description=Check connectivity
+
+[Service]
+Type=oneshot
+ExecStart=/usr/local/bin/keepalive.sh
+
