@@ -1,0 +1,20 @@
+[Unit]
+Description=SSH connection
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+User=emmanuel
+Type=simple
+#WorkingDirectory=~
+ExecStart=/usr/local/bin/chisel.sh
+Restart=on-failure
+RestartSec=60
+KillSignal=SIGINT
+StandardOutput=journal
+StandardError=journal
+CPUQuota=40%
+MemoryMax=200M
+
+[Install]
+WantedBy=multi-user.target
