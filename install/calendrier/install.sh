@@ -51,8 +51,9 @@ install_unit() {
   systemctl disable "${1}.${_type}" || true
 
   info "Installing %s %s files" "$1" "$_type"
-  [ -f "${INKYPI_INSTDIR}/${1}/${1}.service" ] && cp -f "${INKYPI_INSTDIR}/${1}/${1}.service" "/etc/systemd/system/${1}.service"
-  [ -f "${INKYPI_INSTDIR}/${1}/${1}.timer" ] && cp -f "${INKYPI_INSTDIR}/${1}/${1}.timer" "/etc/systemd/system/${1}.timer"
+  for ext in service timer auth; do
+    [ -f "${INKYPI_INSTDIR}/${1}/${1}.${ext}" ] && cp -f "${INKYPI_INSTDIR}/${1}/${1}.${ext}" "/etc/systemd/system/${1}.${ext}"
+  done
   if [ -f "${INKYPI_INSTDIR}/${1}/${1}.sh" ]; then
     cp -f "${INKYPI_INSTDIR}/${1}/${1}.sh" "/usr/local/bin/${1}.sh"
     chmod +x "/usr/local/bin/${1}.sh"
