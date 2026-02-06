@@ -42,11 +42,13 @@ install_unit() {
     else
       _type="service"
     fi
+  else
+    _type="$2"
   fi
 
   info "Removing existing %s %s if any" "$1" "$_type"
-  systemctl stop ${1}.${_type} || true
-  systemctl disable ${1}.${_type} || true
+  systemctl stop "${1}.${_type}" || true
+  systemctl disable "${1}.${_type}" || true
 
   info "Installing %s %s files" "$1" "$_type"
   [ -f "${INKYPI_INSTDIR}/${1}/${1}.service" ] && cp -f "${INKYPI_INSTDIR}/${1}/${1}.service" "/etc/systemd/system/${1}.service"
@@ -58,8 +60,8 @@ install_unit() {
 
   info "Enabling and starting %s %s" "$1" "$_type"
   systemctl daemon-reload
-  systemctl enable ${1}.${_type}
-  systemctl start ${1}.${_type}
+  systemctl enable "${1}.${_type}"
+  systemctl start "${1}.${_type}"
 }
 
 if [ "$#" = 0 ]; then
