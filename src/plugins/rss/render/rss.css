@@ -35,7 +35,7 @@
 .rss-item .item-title {
     font-weight: bold;
     padding-bottom: 1dvh;
-    font-size: calc(min(4dvh, 3vw) * var(--font-scale));
+    font-size: calc(min(5dvh, 4vw) * var(--font-scale));
 }
 
 .rss-item .item-image {
@@ -50,7 +50,7 @@
 }
 
 .rss-item .item-description {
-    font-size: calc(min(3.5dvh, 3vw) * var(--font-scale));
+    font-size: calc(min(5dvh, 4vw) * var(--font-scale));
 }
 
 .rss-item .text-container {

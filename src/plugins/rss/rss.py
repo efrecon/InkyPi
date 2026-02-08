@@ -12,8 +12,8 @@ FONT_SIZES = {
     "x-small": 0.7,
     "small": 0.9,
     "normal": 1,
-    "large": 1.1,
-    "x-large": 1.3
+    "large": 1.2,
+    "x-large": 1.5
 }
 
 class Rss(BasePlugin):

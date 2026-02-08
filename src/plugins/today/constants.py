@@ -4,8 +4,8 @@ FONT_SIZES = {
     "small": 0.9,
     "normal": 1,
     "large": 1.1,
-    "larger": 1.2,
-    "x-large": 1.3
+    "larger": 1.3,
+    "x-large": 1.5
 }
 
 LOCALE_MAP = {
