@@ -8,8 +8,14 @@ if set -o | grep -q 'pipefail'; then set -o pipefail; fi
 # Root directory where this script is located
 : "${CHISEL_SCRIPTDIR:="$( cd -P -- "$(dirname -- "$(command -v -- "$0")")" && pwd -P )"}"
 
-# Location of the chisel binary
-: "${CHISEL_BIN:=${HOME}/.local/bin/chisel}"
+# Default location of the chisel binary
+if [ "$(id -u)" = "0" ]; then
+  # Running as root, install to /usr/local/bin
+  : "${CHISEL_BIN:=/usr/local/bin/chisel}"
+else
+  # Running as non-root, install to ~/.local/bin
+  : "${CHISEL_BIN:=${XDG_BIN_HOME:-${HOME:-"/home/$(id -un)"}/.local/bin}/chisel}"
+fi
 
 # Version of chisel to install
 : "${CHISEL_VERSION:=1.11.3}"
@@ -54,6 +60,8 @@ download() { run_curl -o "${2:-$(basename "$1")}" "$1"; }
 run_curl() {
   curl -fsSL --retry 5 --retry-delay 3 "$@"
 }
+
+info "Running as user: %s (uid=%s)" "$(id -un)" "$(id -u)"
 
 if ! [ -x "$CHISEL_BIN" ]; then
   tmp="$(mktemp -u -t chisel-XXXXXX).gz"
