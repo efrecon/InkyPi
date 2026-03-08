@@ -67,7 +67,7 @@ exec fbi \
         -nocomments \
         -noverbose \
         -nointeractive \
-        -timeout ${FBI_TIMEOUT} \
+        -timeout "${FBI_TIMEOUT}" \
         -cachemem 0 \
         -vt "${FBI_CONSOLE}" \
           "${FBI_IMAGESDIR%%/}/current_image.png" \

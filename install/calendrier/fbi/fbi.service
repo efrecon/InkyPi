@@ -9,8 +9,8 @@ Type=simple
 #WorkingDirectory=~
 Environment="FBI_INKYDIR=/home/emmanuel/InkyPi"
 ExecStart=/usr/local/bin/fbi.sh
-Restart=on-failure
-RestartSec=60
+Restart=always
+RestartSec=10s
 KillSignal=SIGINT
 StandardOutput=journal
 StandardError=journal
