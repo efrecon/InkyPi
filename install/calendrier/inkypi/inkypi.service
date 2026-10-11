@@ -9,6 +9,7 @@ Type=simple
 #WorkingDirectory=~
 Environment="INKYPI_ROOTDIR=/home/emmanuel/InkyPi"
 ExecStart=/usr/local/bin/inkypi.sh
+ExecStop=/usr/local/bin/inkypi.sh -p $MAINPID
 Restart=on-failure
 RestartSec=60
 KillSignal=SIGINT

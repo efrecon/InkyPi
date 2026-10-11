@@ -1,0 +1,236 @@
+{
+    "name": "InkyPi Le Bon Accueil",
+    "display_type": "mock",
+    "resolution": [
+        1920,
+        1080
+    ],
+    "orientation": "horizontal",
+    "playlist_config": {
+        "playlists": [
+            {
+                "name": "Default",
+                "start_time": "06:45",
+                "end_time": "19:00",
+                "plugins": [
+                    {
+                        "plugin_id": "rss",
+                        "name": "Le Monde",
+                        "plugin_settings": {
+                            "title": "Le Monde",
+                            "includeImages": "true",
+                            "fontSize": "x-large",
+                            "feedUrl": "https://www.lemonde.fr/rss/une.xml",
+                            "selectedFrame": "None",
+                            "topMargin": "",
+                            "bottomMargin": "",
+                            "leftMargin": "20",
+                            "rightMargin": "",
+                            "backgroundOption": "color",
+                            "backgroundColor": "#ffffff",
+                            "textColor": "#000000"
+                        },
+                        "refresh": {
+                            "interval": 3600
+                        },
+                        "latest_refresh_time": "2026-10-11T13:59:40.273307+02:00"
+                    },
+                    {
+                        "plugin_id": "today",
+                        "name": "F\u00eate",
+                        "plugin_settings": {
+                            "calendarURLs[]": [
+                                "https://nominis.cef.fr/ical/nominis.php?a=2025",
+                                "https://efrecon.github.io/allday.ics/fr-FR/fetedujour.ics"
+                            ],
+                            "calendarDescriptions[]": [
+                                "false",
+                                "false"
+                            ],
+                            "language": "fr",
+                            "fontSize": "x-large",
+                            "selectedFrame": "None",
+                            "topMargin": "",
+                            "bottomMargin": "",
+                            "leftMargin": "20",
+                            "rightMargin": "",
+                            "backgroundOption": "color",
+                            "backgroundColor": "#ffffff",
+                            "textColor": "#000000"
+                        },
+                        "refresh": {
+                            "interval": 3600
+                        },
+                        "latest_refresh_time": "2026-10-11T12:08:18.459567+02:00"
+                    },
+                    {
+                        "plugin_id": "rss",
+                        "name": "CourrierInternationalSuede",
+                        "plugin_settings": {
+                            "title": "Courrier International: Su\u00e8de",
+                            "includeImages": "true",
+                            "fontSize": "x-large",
+                            "feedUrl": "https://www.courrierinternational.com/feed/rubrique/suede/rss.xml",
+                            "selectedFrame": "None",
+                            "topMargin": "",
+                            "bottomMargin": "",
+                            "leftMargin": "20",
+                            "rightMargin": "",
+                            "backgroundOption": "color",
+                            "backgroundColor": "#ffffff",
+                            "textColor": "#000000"
+                        },
+                        "refresh": {
+                            "interval": 3600
+                        },
+                        "latest_refresh_time": "2026-10-11T12:24:25.047739+02:00"
+                    },
+                    {
+                        "plugin_id": "today",
+                        "name": "Ce jour dans histoire",
+                        "plugin_settings": {
+                            "calendarURLs[]": [
+                                "https://efrecon.github.io/allday.ics/fr-FR/histoire.ics"
+                            ],
+                            "calendarDescriptions[]": [
+                                "true"
+                            ],
+                            "language": "fr",
+                            "fontSize": "x-large",
+                            "selectedFrame": "None",
+                            "topMargin": "",
+                            "bottomMargin": "",
+                            "leftMargin": "20",
+                            "rightMargin": "",
+                            "backgroundOption": "color",
+                            "backgroundColor": "#ffffff",
+                            "textColor": "#000000"
+                        },
+                        "refresh": {
+                            "interval": 3600
+                        },
+                        "latest_refresh_time": "2026-10-11T12:40:40.397677+02:00"
+                    },
+                    {
+                        "plugin_id": "rss",
+                        "name": "LaCroix",
+                        "plugin_settings": {
+                            "title": "La Croix",
+                            "includeImages": "true",
+                            "fontSize": "x-large",
+                            "feedUrl": "https://www.la-croix.com/feeds/rss/site.xml",
+                            "selectedFrame": "None",
+                            "topMargin": "",
+                            "bottomMargin": "",
+                            "leftMargin": "20",
+                            "rightMargin": "",
+                            "backgroundOption": "color",
+                            "backgroundColor": "#ffffff",
+                            "textColor": "#000000"
+                        },
+                        "refresh": {
+                            "interval": 3600
+                        },
+                        "latest_refresh_time": "2026-10-11T10:45:53.020582+02:00"
+                    },
+                    {
+                        "plugin_id": "today",
+                        "name": "C\u00e9l\u00e9brit\u00e9s",
+                        "plugin_settings": {
+                            "calendarURLs[]": [
+                                "https://efrecon.github.io/tmdb-events/fr-FR/person.ics"
+                            ],
+                            "calendarDescriptions[]": [
+                                "true"
+                            ],
+                            "language": "fr",
+                            "fontSize": "x-large",
+                            "selectedFrame": "None",
+                            "topMargin": "",
+                            "bottomMargin": "",
+                            "leftMargin": "20",
+                            "rightMargin": "",
+                            "backgroundOption": "color",
+                            "backgroundColor": "#ffffff",
+                            "textColor": "#000000"
+                        },
+                        "refresh": {
+                            "interval": 3600
+                        },
+                        "latest_refresh_time": "2026-10-11T13:11:58.874032+02:00"
+                    },
+                    {
+                        "plugin_id": "weather",
+                        "name": "M\u00e9t\u00e9o",
+                        "plugin_settings": {
+                            "latitude": "50.42221260972183",
+                            "longitude": "2.673969268798828",
+                            "weatherProvider": "OpenMeteo",
+                            "units": "metric",
+                            "titleSelection": "custom",
+                            "customTitle": "M\u00e9t\u00e9o Bouvigny-Boyeffles",
+                            "displayMetrics": "true",
+                            "displayForecast": "true",
+                            "forecastDays": "3",
+                            "selectedFrame": "None",
+                            "topMargin": "",
+                            "bottomMargin": "",
+                            "leftMargin": "20",
+                            "rightMargin": "",
+                            "backgroundOption": "color",
+                            "backgroundColor": "#ffffff",
+                            "textColor": "#000000"
+                        },
+                        "refresh": {
+                            "interval": 10800
+                        },
+                        "latest_refresh_time": "2026-10-11T11:18:29.313989+02:00"
+                    },
+                    {
+                        "plugin_id": "rss",
+                        "name": "FlipboardSuede",
+                        "plugin_settings": {
+                            "title": "Flipboard: Su\u00e8de",
+                            "includeImages": "true",
+                            "fontSize": "x-large",
+                            "feedUrl": "https://flipboard.com/topic/fr-su%C3%A8de.rss",
+                            "selectedFrame": "None",
+                            "topMargin": "",
+                            "bottomMargin": "",
+                            "leftMargin": "20",
+                            "rightMargin": "",
+                            "backgroundOption": "color",
+                            "backgroundColor": "#ffffff",
+                            "textColor": "#000000"
+                        },
+                        "refresh": {
+                            "interval": 3600
+                        },
+                        "latest_refresh_time": "2026-10-11T13:43:19.732577+02:00"
+                    }
+                ],
+                "current_plugin_index": 0
+            }
+        ],
+        "active_playlist": "Default"
+    },
+    "refresh_info": {
+        "refresh_time": "2026-10-11T13:59:40.273307+02:00",
+        "image_hash": "12286f2a73e66b19195f98a7a6fe126d1ade93beefbcef15c02125b9f1cc4fc4",
+        "refresh_type": "Playlist",
+        "plugin_id": "rss",
+        "playlist": "Default",
+        "plugin_instance": "Le Monde"
+    },
+    "inverted_image": null,
+    "log_system_stats": null,
+    "timezone": "Europe/Paris",
+    "time_format": "24h",
+    "plugin_cycle_interval_seconds": 900,
+    "image_settings": {
+        "saturation": 1.0,
+        "brightness": 1.0,
+        "sharpness": 1.0,
+        "contrast": 1.0
+    }
+}
