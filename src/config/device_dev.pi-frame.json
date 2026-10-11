@@ -1,17 +1,17 @@
 {
-    "name": "InkyPi Le Bon Accueil",
+    "name": "InkyPi Augustus10",
     "display_type": "mock",
     "resolution": [
-        1920,
-        1080
+        1280,
+        800
     ],
     "orientation": "horizontal",
     "playlist_config": {
         "playlists": [
             {
                 "name": "Default",
-                "start_time": "06:45",
-                "end_time": "19:00",
+                "start_time": "06:30",
+                "end_time": "22:30",
                 "plugins": [
                     {
                         "plugin_id": "rss",
@@ -33,14 +33,14 @@
                         "refresh": {
                             "interval": 3600
                         },
-                        "latest_refresh_time": "2026-10-11T13:59:40.273307+02:00"
+                        "latest_refresh_time": "2026-10-11T14:03:45.789002+02:00"
                     },
                     {
                         "plugin_id": "today",
                         "name": "F\u00eate",
                         "plugin_settings": {
                             "calendarURLs[]": [
-                                "https://nominis.cef.fr/ical/nominis.php?a=2025",
+                                "https://nominis.cef.fr/ical/nominis.php?a=2026",
                                 "https://efrecon.github.io/allday.ics/fr-FR/fetedujour.ics"
                             ],
                             "calendarDescriptions[]": [
@@ -61,16 +61,16 @@
                         "refresh": {
                             "interval": 3600
                         },
-                        "latest_refresh_time": "2026-10-11T12:08:18.459567+02:00"
+                        "latest_refresh_time": "2026-10-11T14:19:36.112583+02:00"
                     },
                     {
                         "plugin_id": "rss",
-                        "name": "CourrierInternationalSuede",
+                        "name": "FlipboardSuede",
                         "plugin_settings": {
-                            "title": "Courrier International: Su\u00e8de",
+                            "title": "Flipboard: Su\u00e8de",
                             "includeImages": "true",
                             "fontSize": "x-large",
-                            "feedUrl": "https://www.courrierinternational.com/feed/rubrique/suede/rss.xml",
+                            "feedUrl": "https://flipboard.com/topic/fr-su%C3%A8de.rss",
                             "selectedFrame": "None",
                             "topMargin": "",
                             "bottomMargin": "",
@@ -83,7 +83,18 @@
                         "refresh": {
                             "interval": 3600
                         },
-                        "latest_refresh_time": "2026-10-11T12:24:25.047739+02:00"
+                        "latest_refresh_time": "2026-10-11T14:35:16.097065+02:00"
+                    },
+                    {
+                        "plugin_id": "image_url",
+                        "name": "Paysage",
+                        "plugin_settings": {
+                            "url": "https://efrecon.github.io/artwork-of-the-day/landscape.jpg"
+                        },
+                        "refresh": {
+                            "scheduled": "10:00"
+                        },
+                        "latest_refresh_time": "2026-10-11T15:13:58.742819+02:00"
                     },
                     {
                         "plugin_id": "today",
@@ -109,7 +120,7 @@
                         "refresh": {
                             "interval": 3600
                         },
-                        "latest_refresh_time": "2026-10-11T12:40:40.397677+02:00"
+                        "latest_refresh_time": "2026-10-11T12:45:08.523649+02:00"
                     },
                     {
                         "plugin_id": "rss",
@@ -131,7 +142,7 @@
                         "refresh": {
                             "interval": 3600
                         },
-                        "latest_refresh_time": "2026-10-11T10:45:53.020582+02:00"
+                        "latest_refresh_time": "2026-10-11T13:00:57.613241+02:00"
                     },
                     {
                         "plugin_id": "today",
@@ -157,18 +168,18 @@
                         "refresh": {
                             "interval": 3600
                         },
-                        "latest_refresh_time": "2026-10-11T13:11:58.874032+02:00"
+                        "latest_refresh_time": "2026-10-11T13:16:53.006145+02:00"
                     },
                     {
                         "plugin_id": "weather",
                         "name": "M\u00e9t\u00e9o",
                         "plugin_settings": {
-                            "latitude": "50.42221260972183",
-                            "longitude": "2.673969268798828",
+                            "latitude": "59.3059",
+                            "longitude": "17.9868",
                             "weatherProvider": "OpenMeteo",
                             "units": "metric",
                             "titleSelection": "custom",
-                            "customTitle": "M\u00e9t\u00e9o Bouvigny-Boyeffles",
+                            "customTitle": "Weather Hagersten",
                             "displayMetrics": "true",
                             "displayForecast": "true",
                             "forecastDays": "3",
@@ -184,49 +195,38 @@
                         "refresh": {
                             "interval": 10800
                         },
-                        "latest_refresh_time": "2026-10-11T11:18:29.313989+02:00"
+                        "latest_refresh_time": "2026-10-11T13:32:45.004505+02:00"
                     },
                     {
-                        "plugin_id": "rss",
-                        "name": "FlipboardSuede",
+                        "plugin_id": "image_url",
+                        "name": "Peinture Huile",
                         "plugin_settings": {
-                            "title": "Flipboard: Su\u00e8de",
-                            "includeImages": "true",
-                            "fontSize": "x-large",
-                            "feedUrl": "https://flipboard.com/topic/fr-su%C3%A8de.rss",
-                            "selectedFrame": "None",
-                            "topMargin": "",
-                            "bottomMargin": "",
-                            "leftMargin": "20",
-                            "rightMargin": "",
-                            "backgroundOption": "color",
-                            "backgroundColor": "#ffffff",
-                            "textColor": "#000000"
+                            "url": "https://efrecon.github.io/artwork-of-the-day/oil-painting.jpg"
                         },
                         "refresh": {
-                            "interval": 3600
+                            "scheduled": "10:00"
                         },
-                        "latest_refresh_time": "2026-10-11T13:43:19.732577+02:00"
+                        "latest_refresh_time": "2026-10-11T11:27:38.526299+02:00"
                     }
                 ],
-                "current_plugin_index": 0
+                "current_plugin_index": 3
             }
         ],
         "active_playlist": "Default"
     },
     "refresh_info": {
-        "refresh_time": "2026-10-11T13:59:40.273307+02:00",
-        "image_hash": "12286f2a73e66b19195f98a7a6fe126d1ade93beefbcef15c02125b9f1cc4fc4",
+        "refresh_time": "2026-10-11T15:13:58.742819+02:00",
+        "image_hash": "fe086a80baebaee80104c86b036b82eada0f994bd98f1655f44020a07774bf3b",
         "refresh_type": "Playlist",
-        "plugin_id": "rss",
+        "plugin_id": "image_url",
         "playlist": "Default",
-        "plugin_instance": "Le Monde"
+        "plugin_instance": "Paysage"
     },
     "inverted_image": null,
     "log_system_stats": null,
-    "timezone": "Europe/Paris",
+    "timezone": "Europe/Stockholm",
     "time_format": "24h",
-    "plugin_cycle_interval_seconds": 900,
+    "plugin_cycle_interval_seconds": 300,
     "image_settings": {
         "saturation": 1.0,
         "brightness": 1.0,
