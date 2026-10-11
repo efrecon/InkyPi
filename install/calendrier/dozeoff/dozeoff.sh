@@ -45,6 +45,7 @@ fi
 if [ -d "$DOZEOFF_BACKLIGHT" ]; then
   info "Setting backlight brightness to 0 in %s" "$DOZEOFF_BACKLIGHT"
   echo 0 > "$DOZEOFF_BACKLIGHT/brightness" || error "Failed to set backlight brightness to 0 in %s" "$DOZEOFF_BACKLIGHT"
-else
+elif [ -f "/sys/class/drm/card0-HDMI-A-1/status" ]; then
   warn "Backlight directory %s does not exist" "$DOZEOFF_BACKLIGHT"
+  echo "off" | sudo tee /sys/class/drm/card0-HDMI-A-1/status
 fi

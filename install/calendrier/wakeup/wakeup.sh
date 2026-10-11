@@ -48,6 +48,7 @@ if [ -d "$WAKEUP_BACKLIGHT" ]; then
   max=$(cat "$WAKEUP_BACKLIGHT/max_brightness")
   info "Setting backlight brightness to %d in %s" "$max" "$WAKEUP_BACKLIGHT"
   echo "$max" > "$WAKEUP_BACKLIGHT/brightness" || error "Failed to set backlight brightness to %d in %s" "$max" "$WAKEUP_BACKLIGHT"
-else
+elif [ -f "/sys/class/drm/card0-HDMI-A-1/status" ]; then
   warn "Backlight directory %s does not exist" "$WAKEUP_BACKLIGHT"
+  echo "on" | sudo tee /sys/class/drm/card0-HDMI-A-1/status
 fi
